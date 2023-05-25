@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>example</title>
+	<meta name="outhor" content="Mohammad Amin Qurbani" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="discription" content="this is an example"/>
+	<meta name="keyword" content=""/>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="myBootstrap.css" type="text/css"/>
+	<link rel="shortcut icon" href="id.ico">
+	<link rel="stylesheet" href="css/font-awesome.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+
+	<script src="js/myBootstrap.js"></script>
+	<script src="js/home.js"></script>
+
+
+
+	<img id="img1" src="img/WelcomeScan.jpg"/>
+	<img id="img2" src="img/p4.jpg"/>
+	<img id="img3" src="img/MRT11.jpg"/>
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+<body  onload = "slide(1); picSlideShow(1); liveTime();getHeight();mobileHeigth()" onresize="getHeight();">
+
+
+
+	<div id="model">
+
+		<span id="close" class="fa fa-close"></span>
+		<img src="img/tow1.png" id="model-img" />
+		<div id="model-caption" >IN THE NAME OF GOD</div>
+	</div>
+
+	<header id="myHeader"class="home" style="padding-top: 10px;">
+
+
+		<span class="slide-show-btn">
+				<span class="cer" id="1" onclick="slide(this.id);" ></span>
+				<span class="cer" id="2" onclick="slide(this.id);" ></span>
+				<span class="cer" id="3" onclick="slide(this.id);" ></span>
+		</span>
+
+
+
+		<div class="myRow">
+			<div class="col-tab-2 ">
+				<a href="#"class="when-phone-img-center"><img  src="img/tow1.png"style="max-width:150px;"/></a>
+			</div>
+
+			<div class="col-tab-10 "id="icons">
+
+				<ul style="font-size: 16px; float:right; padding-top: 10px;">
+					<li class="fa fa-facebook    circlei fp"></li>
+					<li class="fa fa-twitter     circlei"></li>
+					<li class="fa fa-youtube-play circlei"></li>
+					<li class="fa fa-pinterest-p circlei fp"></li>
+					<li class="glyphicon glyphicon-log-in log-reg"> Login</li>
+					<li class="glyphicon glyphicon-registration-mark log-reg"> Regestration</li>
+				</ul>
+			</div>
+		</div>
+
+
+
+			<div class="myRow nav">
+				<div class="col-tab-7 col-small-computer-8">
+					<ul class="myMenu">
+						<a href="#"><li class="color-black" style="margin-left:-25px">Home</li></a>
+						<a href="about.html"><li class="color-black">About</li></a>
+						<a href="team.html"><li class="color-black">Team</li></a>
+						<a href="news.html"><li class="color-black">News</li></a>
+						<a href="#"><li class="color-black" id="match-hover">Match
+							<ul id="match">
+								<li style="margin: -20px;">
+
+
+								<div id="main-collection">
+								<p><strong>MAIN COLLECTION</strong></p>
+									<span id="arrows-parent">
+										<span class="glyphicon glyphicon-arrow-left"   onclick="picSlideShow(0);"></span>
+										<span class="glyphicon glyphicon-arrow-right"  onclick="picSlideShow(1);"></span>
+									</span>
+									<img id="pictur" src="img/p1.jpg" height="300" width="100%"/>
+
+								</div>
+								<div id="match-right">
+								<p><strong>NEXT MATHC</strong></p>
+								<p class="next-match">Contrary vs classical</p>
+								<p class="next-match">Contrary vs classical</p>
+								<p class="next-match">Contrary vs classical</p>
+								<p class="next-match">Contrary vs classical</p>
+								<p class="next-match">Discovered vs undoubtable</p>
+								<p class="next-match">Discovered vs undoubtable</p>
+								<p class="next-match">Contrary vs classical</p>
+								<p class="next-match">Contrary vs classical</p>
+								<p class="next-match">Contrary vs classical</p>
+
+								</div>
+
+								</li>
+							</ul>
+						</li></a>
+						<a href="blog.html"><li class="color-black">Blog</li></a>
+						<a href="contact.html"><li class="color-black">Contact</li></a>
+					</ul>
+				</div>
+
+				<div class="col-tab-5 col-small-computer-4" style=" margin-right:-15px;">
+					<form>
+					<span id="mySr"> <span class="glyphicon glyphicon-search mySearch"></span><input class="mySearch" type="search" placeholder="Search" name="search"  /></span>
+					</form>
+				</div>
+			</div>
+
+
+			<div class="myRow phone-nav">
+				<span class="phone-left-menu"><a href="#">MENU</a></span>
+				<span class="phone-right-menu"id="l1" onclick="showIntireMenu();">
+					<strong>
+												<span class="menu-hider">_</span><br/>
+												<span class="menu-hider" id="l2">_</span><br/>
+												<span class="menu-hider" id="l3">_</span><br/>
+											</strong>
+				</span>
+				<span id="collaps">
+					<a href="#">home</a>
+					<a href="about.html">About</a>
+					<a href="team.html">Team</a>
+					<a href="news.html">News</a>
+					<a href="#">Match</a>
+					<a href="blog.html">Blog</a>
+					<a href="contact.html">Contact</a>
+				</span>
+			</div>
+
+
+			<div class="myRow">
+				<div class="col-tab-5 col-small-computer-4"> </div>
+				<div class="col-tab-1 col-small-computer-4"> </div>
+				<div class="col-tab-6 col-small-computer-4" ><span  id="you-win"><p><strong>If you <em style="color: yellow;">Don't Practice</em><br/> you Don't Reseve to win!</strong></p>
+															 <p style="color: gray; font-size: 20px;line-height: 20px; color: #ddd;">If you use this site regularly and would like to help keep the site on the Internet.and would like to help keep the site on the Internet.<br/><br/><br/><br/>															 <span class="read-more" style="border: 2px solid white;"> read more</span></p>
+															</span>
+				</div>
+			</div>
+
+
+	</header>
+
+	<div class="myRow"id="ofter-h" >
+		<li class="glyphicon glyphicon-star" style="color: #ffff00; "></li>
+		<span>Top headlins:</span><span id="own-text1h"> In the name of God            </span>
+								  <span id="own-text2h"> This is a cliant side website.            </span>
+								  <span id="own-text3h"> This static website is divoloped by Mohammad Amin Qurbani.            </span>
+								  <span id="show-texth"></span>
+	</div>
+
+	<div class="myRow">
+		<div class="col-tab-6 vs">
+			<img class="car-panda" src = "img/panda.png"/><span id="pvc">vs</span><img class="car-panda" src = "img/car.png"/>
+		</div>
+		<div class="col-tab-6 vsr">
+			<p style="font-size: 50px;"><b>Next Match</b></p>
+			<p id="revers-time-place"></p>
+			<p id="live-time-place"></p>
+		</div>
+	</div>
+
+	<div class="myRow">
+		<div class="baby">
+		<div class="col-tab-4" >
+			<span class="myn">
+				<img src="img/g2.jpg" width="100%"/>
+				<h3> childhood is very beautifull</h3>
+			</span>
+			<h3 align="center">Match Fixture</h3>
+			<span class="myn">
+				<span>
+					<span id="challenges"><img src="img/car.png" width="20%" /> <span class="formating">Vs</span><img src="img/panda.png" width="20%"/></span>
+					<span id="challenges"><img src="img/M.png" width="20%" />  <span class="formating">Vs</span><img src="img/fly.png" width="20%"/></span>
+					<span id="challenges"><img src="img/fyl2.png" width="20%" />  <span class="formating">Vs</span><img src="img/car.png" width="20%"/></span>
+					<span id="challenges"><img src="img/panda.png" width="20%" />  <span class="formating">Vs</span><img src="img/M.png" width="20%"/></span>
+					<span id="challenges"><img src="img/fly.png" width="20%" />  <span class="formating">Vs</span><img src="img/fyl2.png" width="20%"/></span>
+
+				</span>
+			</span>
+
+
+			<h3 align="center">Points table</h3>
+
+			<div style="overflow-x:auto; ">
+				<table>
+					<tr><td><p class="tabled">#</p></td><td><p class="tabled">Team</p></td><td><p class="tabled">l</p></td><td><p class="tabled">W</p></td><td><p class="tabled">L</p></td></tr>
+					<tr><td><p class="tabled">#</p></td><td><p class="tabled"><img src="img/fly.png" class="team" />Liverpool</p></td><td><p class="tabled">l</p></td><td><p class="tabled">W</p></td><td><p class="tabled">L</p></td></tr>
+					<tr><td><p class="tabled">#</p></td><td><p class="tabled"><img src="img/car.png" class="team" />Liverpool</p></td><td><p class="tabled">l</p></td><td><p class="tabled">W</p></td><td><p class="tabled">L</p></td></tr>
+					<tr><td><p class="tabled">#</p></td><td><p class="tabled"><img src="img/M.png" class="team" />Liverpool</p></td><td><p class="tabled">l</p></td><td><p class="tabled">W</p></td><td><p class="tabled">L</p></td></tr>
+					<tr><td><p class="tabled">#</p></td><td><p class="tabled"><img src="img/fyl2.png" class="team" />Liverpool</p></td><td><p class="tabled">l</p></td><td><p class="tabled">W</p></td><td><p class="tabled">L</p></td></tr>
+					<tr><td><p class="tabled">#</p></td><td><p class="tabled"><img src="img/panda.png" class="team" />Liverpool</p></td><td><p class="tabled">l</p></td><td><p class="tabled">W</p></td><td><p class="tabled">L</p></td></tr>
+
+				</table>
+			</div>
+			<br/>
+			<br/>
+			<span class="he">
+				<h3>Top Soccer Headlines Story <span class="glyphicon glyphicon-flag"></span> </h3>
+				<p class="smallerp" >20 march 2020</p>
+				<h3>Other headlines</h3>
+				<p class="otherh"><span class="glyphicon glyphicon glyphicon-menu-right" style="font-size:10px; margin:3px;"></span>Wenger Vardy won't start</p>
+				<p class="otherh"><span class="glyphicon glyphicon glyphicon-menu-right" style="font-size:10px; margin:3px;"></span>Evans: Vardy just</p>
+				<p class="otherh"><span class="glyphicon glyphicon glyphicon-menu-right" style="font-size:10px; margin:3px;"></span>Pires and Murray</p>
+				<p class="otherh"><span class="glyphicon glyphicon glyphicon-menu-right" style="font-size:10px; margin:3px;"></span>Okazaki backing</p>
+				<p class="otherh"><span class="glyphicon glyphicon glyphicon-menu-right" style="font-size:10px; margin:3px;"></span>Wolfsburg's Rodriguez</p>
+				<p class="otherh"><span class="glyphicon glyphicon glyphicon-menu-right" style="font-size:10px; margin:3px;"></span>Jamie Vardy compared</p>
+				<p class="otherh"><span class="glyphicon glyphicon glyphicon-menu-right" style="font-size:10px; margin:3px;"></span>Pires and Murray</p>
+				<p class="otherh"><span class="glyphicon glyphicon glyphicon-menu-right" style="font-size:10px; margin:3px;"></span>JEvans: Vardy just</p>
+				<p class="otherh"><span class="glyphicon glyphicon glyphicon-menu-right" style="font-size:10px; margin:3px;"></span>Jamie Vardy compared</p>
+				<p class="otherh"><span class="glyphicon glyphicon glyphicon-menu-right" style="font-size:10px; margin:3px;"></span>Pires and Murray</p>
+				<p class="otherh"><span class="glyphicon glyphicon glyphicon-menu-right" style="font-size:10px; margin:3px;"></span>Wolfsburg's Rodriguez</p>
+
+			</span>
+
+
+
+
+
+
+
+
+		</div>
+		<div class="col-tab-8">
+
+			<span class="myn">
+				<img src="img/image_search_1577010352426.jpg" width="100%"/>
+				<p class="just1">20 march 2020</p>
+				<h3> childhood is very beautifull</h3>
+				<p class="just">Just hours after that his grandma had died, Angel Di Maria imagined how she might react if he didn't play</p>
+			</span>
+			<span class="myn">
+				<img src="img/dfw.jpg" width="100%"/>
+				<p class="just1">20 march 2020</p>
+				<h3> childhood is very beautifull</h3>
+				<p class="just">Just hours after that his grandma had died, Angel Di Maria imagined how she might react if he didn't play</p>
+			</span>
+
+			<span class="myn">
+				<img src="img/image_search_1577012994306.jpg" width="100%"/>
+				<p class="just1">20 march 2020</p>
+				<h3> childhood is very beautifull</h3>
+				<p class="just">Just hours after that his grandma had died, Angel Di Maria imagined how she might react if he didn't play</p>
+			</span>
+			<span class="myn">
+				<img src="img/support_bg.png" width="100%"/>
+				<p class="just1">20 march 2020</p>
+				<h3> childhood is very beautifull</h3>
+				<p class="just">Just hours after that his grandma had died, Angel Di Maria imagined how she might react if he didn't play</p>
+			</span>
+		</div>
+		</div>
+	</div>
+
+	<div class="myRow">
+
+		<div class="video" class="col-tab-12">
+		<span class = "ofter-before"></span>
+		<h2 style="background-color: white;display: inline; border: 5px solid white"> Video </h2>
+		<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium<br/> doloremque laudantium, totam rem aperiam</p>
+		</div>
+
+		<div class="col-tab-12" id="main-video">
+			<div>
+			<video controls="controls" width="80%">
+				<source src="img/fadfa.mp4"  type="video/mp4"/></source>
+				<source src="img/fadfa.mp4"  type="video/ogg"/></source>
+			</video>
+			</div>
+		</div>
+
+	</div>
+
+	<br />
+	<br />
+	<div class="myRow">
+	<div class="baby">
+
+		<div class="video" class="col-tab-12">
+		<span class = "ofter-before"></span>
+		<h2 style="background-color: white;display: inline; border: 5px solid white"> Meet Your Team </h2>
+		<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium<br/> doloremque laudantium, totam rem aperiam</p>
+		</div>
+
+		<div class="col-tab-3">
+			<div class="your-team">
+				<img src="img/g5.jpg" width="100%" />
+				<div class="topred" > Eliza </div>
+				<div class="rotateRed" > </div>
+				<div class="blackOne">Charles Wheeler</div>
+				<span class="numberOne">20</span>
+			</div>
+
+		</div>
+		<div class="col-tab-3">
+			<div class="your-team">
+				<img src="img/g6.jpg" width="100%" />
+				<div class="topred" > Marya  </div>
+				<div class="rotateRed" > </div>
+				<div class="blackOne">Charles Wheeler</div>
+				<span class="numberOne">17</span>
+			</div>
+
+		</div>
+		<div class="col-tab-3">
+			<div class="your-team">
+				<img src="img/g23.jpg" width="100%" />
+				<div class="topred" > Fatima  </div>
+				<div class="rotateRed" > </div>
+				<div class="blackOne">Charles Wheeler</div>
+				<span class="numberOne">12</span>
+			</div>
+
+		</div>
+		<div class="col-tab-3">
+			<div class="your-team">
+				<img src="img/g24.jpg" width="100%" />
+				<div class="topred" > Farokh  </div>
+				<div class="rotateRed" > </div>
+				<div class="blackOne">Charles Wheeler</div>
+				<span class="numberOne">7</span>
+			</div>
+
+		</div>
+
+
+	</div>
+	</div>
+
+	<div class="myRow" style="background-color:black; color: white; ">
+	<div class="baby">
+			<div class="col-small-computer-3" >
+					<div id="last-game-info">
+						<a href="#"><img src="img/tow2.png"  style="max-width:90%; max-height: 100px"/></a>
+						<p>Most of our events have hard and easy route choices as we are always keen to encourage new riders.</p>
+						<ul style="font-size: 16px; margin-left: -45px; ">
+							<li class="fa fa-facebook    circlei2 fp2"></li>
+							<li class="fa fa-twitter     circlei2"></li>
+							<li class="fa fa-youtube-play circlei2"></li>
+							<li class="fa fa-pinterest-p circlei2 fp2"></li>
+						</ul>
+					</div>
+			</div>
+			<div class="col-small-computer-2" >
+				<div id="footer-menu">
+					<h3 style="border-bottom: 1px solid white">Menu</h3>
+					<a href="#" class="footer-links">Home</a><br/>
+					<a href="about.html" class="footer-links">About</a><br/>
+					<a href="team.html" class="footer-links">Team</a><br/>
+					<a href="news.html" class="footer-links">News</a><br/>
+					<a href="#" class="footer-links">Match</a><br/>
+					<a href="blog.html" class="footer-links">Blog</a><br/>
+					<a href="contact.html" class="footer-links">Contact</a><br/>
+				</div>
+			</div>
+
+			<div class="col-small-computer-4" style="overflow:auto;">
+				<h3 style="border-bottom: 1px solid white">Contact Us</h3>
+				<span class="fa fa-map-marker fa-lg"> </span> Barchi Kabul Afghanistan <br/><br/>
+				<span class="fa fa-phone fa-lg"> </span> 0093771847364<br/><br/>
+				<span class="fa fa-envelope fa-lg"> </span> mohammadaminqurbani3@gmail.com<br/>
+
+			</div>
+			<div class="col-small-computer-3" >
+				<img src="img/1.png" width="100%"/>
+			</div>
+	</div>
+		<div class="col-tab-12" style="border-top: 1px solid white;	float: left;">
+			<p align="center">Copyright © 2020 GameInfo.All rights reserved.</p>
+		</div>
+	</div>
+
+
+</body>
+<script>
+
+
+var myModel = document.getElementById("model");
+var myModelImg = document.getElementById("model-img");
+var myCaption = document.getElementById("model-caption");
+
+var close = document.getElementById("close");
+close.onclick = function(){
+myModel.style.display="none";
+}
+
+var selectImg = document.getElementsByTagName('img');
+	var i;
+	for(i = 0; i<selectImg.length; i++){
+	selectImg[i].onclick = function(){
+	myModelImg.src = this.src;
+	myModel.style.display="block";
+	myCaption.innerHTML=this.nextElementSibling.innerHTML;
+	}
+}
+
+</script>
+
+
+
+
+
+</html>
